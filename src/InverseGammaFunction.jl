@@ -1,6 +1,6 @@
 module InverseGammaFunction
 
-using SpecialFunctions: gamma
+using Bessels: gamma
 using Roots
 
 export invgamma
