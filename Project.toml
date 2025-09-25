@@ -3,7 +3,13 @@ uuid = "237cb521-0d0c-4a64-8c0f-1bc544af8cb3"
 authors = ["John Lapeyre"]
 version = "1.0.0-DEV"
 
+[deps]
+Roots = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+
 [compat]
+Roots = "2.2.1"
+SpecialFunctions = "2.5.1"
 julia = "1.11"
 
 [extras]
