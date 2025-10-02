@@ -24,11 +24,11 @@ export invgamma, invloggamma
 # The derivative of the gamma function is given by Γ'(x) = Γ(x) ψ⁽⁰⁾(x),
 # where ψ⁽⁰⁾(x) is the digamma function.
 """
-    invgamma(z; branch=:hi)
+    invgamma(y; branch=:hi)
 
-Return the inverse gamma function of `z`.
+Return the inverse gamma function of `y`.
 
-`z` must be a real number greater than 0.885603194410888 and less than `gamma(171)`.
+`y` must be a real number greater than 0.885603194410888 and less than `gamma(171)`.
 If `branch` is `:hi`, then the returned value is in `(xmin, 171.0)` where `xmin=1.461632138429461`.
 If `branch` is `:lo`, then the returned value is in `(0, xmin)`.
 """
@@ -54,9 +54,9 @@ end
 """
     invloggamma(y; branch::Symbol=:hi)
 
-Return the inverse loggamma function of `z`.
+Return the inverse loggamma function of `y`.
 
-`z` must be a real number greater than -0.12148629053584961.
+`y` must be a real number greater than -0.12148629053584961.
 If `branch` is `:hi`, then the returned value is greater than `xmin=1.461632138429461`.
 If `branch` is `:lo`, then the returned value is less than `xmin`.
 """
